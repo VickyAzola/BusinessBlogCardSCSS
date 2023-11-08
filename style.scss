@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$LatoBody: 'Lato', sans-serif;
+$PoppinsTitle: 'Poppins', sans-serif;
+
+:root {
+    --Bg: #F2F5F9;
+    --Card: #FFFFFF;
+    --Headings: #111729;
+    --parr: #677489;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Bg);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-family: $LatoBody;
+}
+
+.card {
+    margin: 1rem;
+    background-color: var(--Card);
+    width: 24rem;
+    min-height: fit-content;
+    border-radius: .8rem;
+    box-shadow: .4rem .4rem 2rem .1rem hsla(0, 0%, 0%, 0.1);
+
+    .top-card {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 24rem;
+            border-radius: .8rem .8rem 0 0;
+        }
+        svg {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+            top: 190px;
+        }
+    } 
+    .top-text {
+        padding: .2rem 2rem 2rem;
+
+        h1 {
+            font-family: $PoppinsTitle;
+            font-size: 1.5rem;
+            color: var(--Headings);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        p {
+            font-size: 1rem;
+            color: var(--parr)
+        }
+    }
+
+    .bottom-card {
+        border-top: 2px solid var(--Bg);
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 4fr;
+        column-gap: .3rem;
+        padding: 2rem 2rem;
+
+        img {
+            border-radius: 50%;
+            width: 3rem;
+        }
+        h2 {
+            font-family: $PoppinsTitle;
+            font-size: 1rem;
+            color: var(--Headings);
+            font-weight: 700;
+        }
+        p {
+            font-size: .9rem;
+        }
+    }
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: .9rem;
+    text-align: center;
+    color: var(--parr);
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--parr);
+
+        &:hover {
+            color:var(--Headings);
+        }
+    }
+}
+

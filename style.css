@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --Bg: #F2F5F9;
+  --Card: #FFFFFF;
+  --Headings: #111729;
+  --parr: #677489;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Bg);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.card {
+  margin: 1rem;
+  background-color: var(--Card);
+  width: 24rem;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  border-radius: 0.8rem;
+  box-shadow: 0.4rem 0.4rem 2rem 0.1rem hsla(0, 0%, 0%, 0.1);
+}
+.card .top-card {
+  position: relative;
+  overflow: hidden;
+}
+.card .top-card img {
+  width: 24rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+.card .top-card svg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  top: 190px;
+}
+.card .top-text {
+  padding: 0.2rem 2rem 2rem;
+}
+.card .top-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: var(--Headings);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.card .top-text p {
+  font-size: 1rem;
+  color: var(--parr);
+}
+.card .bottom-card {
+  border-top: 2px solid var(--Bg);
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 4fr;
+  -moz-column-gap: 0.3rem;
+       column-gap: 0.3rem;
+  padding: 2rem 2rem;
+}
+.card .bottom-card img {
+  border-radius: 50%;
+  width: 3rem;
+}
+.card .bottom-card h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--Headings);
+  font-weight: 700;
+}
+.card .bottom-card p {
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--parr);
+}
+footer a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--parr);
+}
+footer a:hover {
+  color: var(--Headings);
+}/*# sourceMappingURL=style.css.map */
