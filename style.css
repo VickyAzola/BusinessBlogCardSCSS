@@ -16,7 +16,7 @@
 body {
   background-color: var(--Bg);
   display: grid;
-  place-content: center;
+  place-items: center;
   min-height: 100vh;
   font-family: "Lato", sans-serif;
 }
@@ -24,7 +24,7 @@ body {
 .card {
   margin: 1rem;
   background-color: var(--Card);
-  width: 24rem;
+  width: 23rem;
   min-height: -moz-fit-content;
   min-height: fit-content;
   border-radius: 0.8rem;
@@ -35,7 +35,7 @@ body {
   overflow: hidden;
 }
 .card .top-card img {
-  width: 24rem;
+  width: 23rem;
   border-radius: 0.8rem 0.8rem 0 0;
 }
 .card .top-card svg {
@@ -44,7 +44,7 @@ body {
   left: 0;
   right: 0;
   margin-inline: auto;
-  top: 190px;
+  top: 180px;
 }
 .card .top-text {
   padding: 0.2rem 2rem 2rem;
@@ -81,11 +81,12 @@ body {
 }
 .card .bottom-card p {
   font-size: 0.9rem;
+  color: var(--parr);
 }
 
 footer {
-  margin-top: 2rem;
-  font-size: 0.9rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   color: var(--parr);
 }
